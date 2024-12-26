@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #252525; /* Fundo do relógio */
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+#clock {
+    font-size: 2.5em;
+    text-align: center;
+    color: #4caf50; /* Cor do texto do relógio (verde vibrante) */
+    text-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+}
+
+#notifications {
+    margin-bottom: 20px;
+    text-align: center;
+     color: #fff;
+}
+
+
+#notifications div {
+    background-color: #333; /* Fundo da notificação */
+    padding: 10px;
+    border: 1px solid #666;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #252525; /* Fundo da tabela */
+    border: 1px solid #555;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #555;
+    text-align: center;
+    
+}
+
+th {
+    background-color: #333; /* Fundo do cabeçalho da tabela */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #303030; /* Fundo de linhas pares */
+}
+
+/* Efeitos de Hover para tabela */
+table tr:hover {
+    background-color: #444;
+}
+
+/* Texto vibrante em linhas de certeza */
+table tr td:nth-child(3):contains('Certeza') {
+    font-weight: bold;
+    color: #FFC107; /* Amarelo vibrante */
+    text-shadow: 0 0 5px rgba(255, 193, 7, 0.7);
+}
+
+table tr td:nth-child(3):contains('Não Certeza') {
+   font-weight: bold;
+   color: #f44336; /*vermelho vibrante*/
+    text-shadow: 0 0 5px rgba(244, 67, 54, 0.7);
+}
